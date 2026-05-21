@@ -1,0 +1,105 @@
+/* ===== EDUCATION SECTION ===== */
+.education-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #e41313;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+/* underline animation */
+.section-title::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #4020c0, #033e44);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 10px;
+}
+
+/* EDUCATION CARD */
+.edu-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow effect line */
+.edu-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #0f033b, #05444b);
+}
+
+/* hover effect */
+.edu-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff5ca0;
+  box-shadow: 0 10px 30px rgba(124, 92, 255, 0.25);
+}
+
+/* TITLE INSIDE CARD */
+.edu-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #550404;
+}
+
+/* COLLEGE NAME */
+.college {
+  color: #00292e;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* YEAR */
+.year {
+  font-size: 13px;
+  color: #860202;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #351818;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .education-section {
+    padding: 10px;
+  }
+
+  .edu-card {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+}

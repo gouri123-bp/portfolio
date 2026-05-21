@@ -1,0 +1,39 @@
+.contact-desc {
+  color: brown;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* CONTACT INFO BOX */
+.contact-info p {
+  font-size: 14px;
+  color: rgb(210, 30, 150);
+  margin: 6px 0;
+}
+
+/* BUTTONS */
+.contact-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTON STYLE */
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #0e0249, #0004ff);
+  color: rgb(185, 45, 45);
+  font-size: 13px;
+
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(36, 15, 129, 0.3);
+}

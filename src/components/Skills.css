@@ -1,0 +1,28 @@
+.skill-desc {
+  color: #3a2323;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* SKILL GRID */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* SKILL TAGS */
+.skills-grid span {
+  padding: 8px 14px;
+  border-radius: 20px;
+
+ 
+}
+
+/* HOVER EFFECT */
+.skills-grid span:hover {
+  background: #333336;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(1, 0, 5, 0.3);
+}
