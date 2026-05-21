@@ -16,7 +16,7 @@ function Navbar() {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false); // close menu on click
+      setMenuOpen(false);
     }
   };
 
@@ -49,7 +49,7 @@ function Navbar() {
           GOURI NANDA
         </h1>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu (FULL NAVBAR ALWAYS ON DESKTOP) */}
         <div className="hidden md:flex gap-8 text-base font-medium">
 
           {sections.map((section) => (
@@ -68,7 +68,7 @@ function Navbar() {
 
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Hamburger */}
         <button
           className="md:hidden text-pink-300 text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -80,7 +80,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-5 py-6 bg-black/90 border-t border-pink-500/20">
+        <div className="md:hidden flex flex-col items-center gap-6 py-6 bg-black/90 border-t border-pink-500/20">
 
           {sections.map((section) => (
             <button
