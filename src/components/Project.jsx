@@ -2,50 +2,82 @@ import React from "react";
 
 function Project() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-12">
+    <div className="min-h-screen px-6 py-16">
 
-      <div className="text-center max-w-4xl w-full">
-
-        {/* Title */}
-        <h2 className="text-5xl font-bold text-pink-400 mb-10">
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold text-pink-400 mb-4">
           Projects
         </h2>
 
-        {/* Project Card (Cleaner & smaller, no big box feel) */}
-        <div className="max-w-md mx-auto p-6 rounded-2xl bg-white/5 border border-pink-400/40 shadow-lg hover:shadow-pink-400/20 transition">
+        <p className="text-gray-400 max-w-2xl mx-auto">
+          Here are some projects I’ve worked on while improving my frontend
+          development skills and UI design experience.
+        </p>
+      </div>
 
-          <h3 className="text-2xl font-bold text-pink-300 mb-3">
+      {/* Full Width Layout */}
+      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+
+        {/* Left Content */}
+        <div>
+
+          <h3 className="text-4xl font-bold text-pink-300 mb-5">
             Style Sync
           </h3>
 
-          <p className="text-gray-300 text-sm leading-6 mb-4">
-            Style Sync is a modern fashion inspiration web app that helps users
-            discover outfit combinations, trending styles, and personalized
-            fashion ideas based on different occasions.
+          <p className="text-gray-300 leading-8 mb-5">
+            Style Sync is a modern fashion web application designed to help
+            users discover outfit inspirations, trending styles, and fashion
+            combinations through a clean and responsive interface.
           </p>
 
-          <p className="text-gray-400 text-xs leading-5 mb-4">
-            The project focuses on delivering a smooth and visually appealing UI
-            where users can explore outfit cards, view style suggestions, and
-            get inspired by curated fashion layouts.
+          <p className="text-gray-400 leading-7 mb-8">
+            The project focuses on creating an elegant user experience with
+            smooth navigation, interactive sections, and visually balanced
+            layouts inspired by modern fashion platforms.
           </p>
 
           {/* Features */}
-          <ul className="text-gray-300 text-sm text-left space-y-2 mb-5">
-            <li>• AI-inspired outfit recommendation layout</li>
-            <li>• Categorized styles (Casual, Formal, Streetwear)</li>
-            <li>• Responsive card-based UI design</li>
-            <li>• Smooth hover animations for better UX</li>
-            <li>• Minimal and aesthetic fashion-focused interface</li>
-          </ul>
+          <div className="space-y-4 mb-8">
+
+            <div className="flex items-start gap-3">
+              <span className="text-pink-400 text-lg">✦</span>
+              <p className="text-gray-300">
+                Responsive design optimized for desktop, tablet, and mobile.
+              </p>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-pink-400 text-lg">✦</span>
+              <p className="text-gray-300">
+                Fashion category sections like Casual, Streetwear, and Formal.
+              </p>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-pink-400 text-lg">✦</span>
+              <p className="text-gray-300">
+                Smooth hover animations and modern UI interactions.
+              </p>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <span className="text-pink-400 text-lg">✦</span>
+              <p className="text-gray-300">
+                Clean layout focused on user-friendly browsing experience.
+              </p>
+            </div>
+
+          </div>
 
           {/* Tech Stack */}
-          <div className="flex flex-wrap justify-center gap-2">
-            {["HTML", "CSS", "JavaScript", "React", "Tailwind"].map(
+          <div className="flex flex-wrap gap-3">
+            {["React", "Tailwind CSS", "JavaScript", "HTML", "CSS"].map(
               (tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 text-xs rounded-full border border-pink-400/60 text-pink-200 bg-black/20"
+                  className="px-4 py-2 text-sm rounded-full border border-pink-400/50 text-pink-200 bg-white/5"
                 >
                   {tech}
                 </span>
@@ -54,6 +86,27 @@ function Project() {
           </div>
 
         </div>
+
+        {/* Right Side Visual Area */}
+        <div className="flex items-center justify-center">
+
+          <div className="w-full h-[400px] rounded-3xl border border-pink-400/30 bg-gradient-to-br from-pink-500/10 to-black flex items-center justify-center">
+
+            <div className="text-center px-6">
+              <h4 className="text-3xl font-bold text-pink-300 mb-4">
+                Style Sync
+              </h4>
+
+              <p className="text-gray-400 leading-7">
+                Modern fashion inspiration platform with responsive UI and
+                stylish layouts.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
