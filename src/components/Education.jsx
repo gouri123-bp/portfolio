@@ -4,7 +4,7 @@ function Education() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6">
 
-      <div className="text-center max-w-2xl">
+      <div className="text-center max-w-4xl w-full">
 
         {/* Title */}
         <h2 className="text-5xl font-bold text-pink-400 mb-6">
@@ -17,8 +17,8 @@ function Education() {
           learning programming, web development, and software fundamentals.
         </p>
 
-        {/* Education Details */}
-        <div>
+        {/* Main Education Box */}
+        <div className="border border-pink-400 bg-white/10 rounded-xl p-6 mb-10">
 
           <h3 className="text-2xl font-bold text-white mb-2">
             Diploma in Computer Engineering
@@ -33,10 +33,38 @@ function Education() {
           </p>
 
           <p className="text-gray-300 leading-7 text-sm">
-            Currently developing skills in frontend development, programming
-            languages, databases, and building real-world projects to improve
-            practical knowledge.
+            Currently developing skills in frontend development, programming,
+            databases, and real-world project building.
           </p>
+
+        </div>
+
+        {/* Small Boxes Section */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+          <div className="p-4 rounded-xl border border-pink-400 bg-white/10 text-sm text-gray-300">
+            HTML & CSS
+          </div>
+
+          <div className="p-4 rounded-xl border border-pink-400 bg-white/10 text-sm text-gray-300">
+            JavaScript Basics
+          </div>
+
+          <div className="p-4 rounded-xl border border-pink-400 bg-white/10 text-sm text-gray-300">
+            React JS
+          </div>
+
+          <div className="p-4 rounded-xl border border-pink-400 bg-white/10 text-sm text-gray-300">
+            Tailwind CSS
+          </div>
+
+          <div className="p-4 rounded-xl border border-pink-400 bg-white/10 text-sm text-gray-300">
+            DBMS Basics
+          </div>
+
+          <div className="p-4 rounded-xl border border-pink-400 bg-white/10 text-sm text-gray-300">
+            Problem Solving
+          </div>
 
         </div>
 
